@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
+/* --------------------------------
+ * base
+ * -------------------------------- */
+ html {
+	font-size: 62.5%;
+}
+body {
+	color: #151515;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	margin: 0;
+	padding: 0;
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+ /* --------------------------------
+ * parts
+ * -------------------------------- */
+ .cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ /* --------------------------------
+ * header
+ * -------------------------------- */
+.header  {
+	height: 100px;
+/*	border: 5px solid #888 ;*/
+	padding: 30px;
+	margin-bottom: 10px;
+	font-size: 2rem;
+	background-color: #e4e4e4;
+
+ }
+
+
+
+
+
+ .header h1 {
+ 	display: none;
+ }
+  /* --------------------------------
+ * main
+ * -------------------------------- */
+
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+.main h2 {
+	font-size: 3.5rem;
+	text-align: left;
+/*	background-color: orange;*/
+	padding:20px 0 10px;
+	color: #000;
+	margin: 0;
+
+}
+
+.main h2 span {
+	font-size:2.5rem;
+
+}
+
+
+.top {
+	width: 100%;
+	display: block;
+	position: relative;
+	padding-top:15px;
+
+}
+
+.top .wrap {
+	display: block;
+}
+
+.top-left {
+    float: left;
+    height: 435px;
+    background-color: #ff6a6a;
+    position: relative;
+    width: 100%;
+}
+
+.top-left h3 {
+    color: #FFF;
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    text-align: center;
+    font-size: 3.5rem;
+    z-index: 111;
+
+}
+
+.top-left p {
+	position: absolute;
+    padding: 50px 25px 0;
+    /* top: 30px; */
+    /* left: 10px; */
+    text-align: left;
+    font-size: 2.5rem;
+    z-index: 111;
+    line-height: 2;
+    letter-spacing: 1px;
+
+}
+
+
+
+.top-right {
+	z-index: -111;
+}
+
+.top-right .image {
+	position: absolute;
+	top:4px;
+	right: 0;
+	width:50%;
+
+}
+
+.job {
+	text-align: center;
+	white-space: nowrap;
+	margin-top: 30px;
+
+}
+
+.job-left , .job-right {
+    display: inline-block;
+    text-align: left;
+    padding: 10px 30px;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    color: #e45656;
+    vertical-align: text-top;
+  }
+
+
+.job-L-title, .job-R-title {
+	width: 150px;
+	height: 35px;
+	margin: 5px;
+	padding: 3px;
+	border: 2px solid #e45656;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 1.8;
+	color: #e45656;
+}
+
+
+.cal {
+	  width: 900px;
+    margin: 0 auto 50px;
+}
+
+.cal h3  , .StVc h3{
+	font-size:2.5rem;
+}
+
+
+.gakka-title {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+    /* background-color: #ffdfdf; */
+    margin: 0 auto 25px;
+    border-left: 10px #ff6a6a solid;
+    padding: 0 10px;
+    line-height: 1.5;
+}
+
+.gakka-title span {
+	font-weight: normal;
+	font-size: 1.3rem;
+}
+
+
+.hisshu-top , .sentaku-top {
+	text-align: left;
+    margin: 15px 0 5px;
+}
+
+.hisshu-txt ,.sentaku-txt ,.jisshu-txt{
+	display: inline-block;
+    padding-left: 15px;
+    margin-bottom: 0;
+    color: #020000;
+}
+
+
+.hisshu-title , .sentaku-title {
+	display: inline-block;
+    /* text-align: left; */
+    background-color: #ff6a6a;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #FFF;
+    padding: 9px;
+}
+
+table {
+    width: 900px;
+    border-collapse: collapse;
+    /* border: #562e01 solid; */
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+td {
+	padding: 10px;
+	border-top:1px #968585 solid;
+    border-bottom: 1px #968585 solid;
+    background-color: #ffdfdf;
+}
+
+td + td {
+    border-left: 1px #4c0101 dashed;
+}
+
+tr:nth-of-type(even) td{
+	background-color: #ffb0b0;
+}
+
+.sentaku {
+	margin: 30px auto 40px;
+}
+
+.sentaku-cont p {
+	display: inline-block;
+	font-size: 1.6rem;
+}
+
+.sentaku-cont p + p {
+	padding-left: 30px;
+}
+
+.jisshu {
+	width :100%;
+}
+
+.jisshu-txt {
+	text-align: left;
+	margin-top: 0;
+	padding-bottom: 25px;
+	width: 900px;
+}
+
+
+.detail-section {
+	width: 900px;
+	margin-bottom: 25px;
+
+}
+
+.detail-cont {
+	float: left;
+	width: 33.3333%;
+	height: auto;
+	white-space: nowrap;
+}
+
+
+.detail-cont-wrap {
+	display: inline-block;
+	width:60%;
+	vertical-align: top;
+	 margin-right: 12px;
+}
+
+.detail-cont .image {
+	width: 90px;
+	margin-right: 10px;
+}
+
+.detail-title {
+	font-size: 1.3rem;
+    text-align: left;
+    letter-spacing: -1px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.detail-txt {
+	height: auto;
+    width: 100%;
+    white-space: normal;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.etc-cont img {
+	width: 900px;
+	height: auto;
+}
+
+.StVc-cont {
+	float: left;
+	width: 50%;
+
+}
+
+.StVc-title {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 25px 0 10px;
+    color: #ff4545;
+}
+
+.StVc-txt {
+	font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.StVc-img {
+	float: right;
+	width: 50%;
+}
+
+
+.StVc-img .image {
+    width: 70%;
+    height: auto;
+}
+
+
+.footer  {
+	height: 100px;
+	padding: 30px;
+	margin-top: 10px;
+	font-size: 2rem;
+	background-color: #e4e4e4;
+ }
